@@ -1,0 +1,88 @@
+﻿/* Menu Container with Arrows */
+.menu-container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Swiper Container */
+.menu-swiper {
+    width: 100%;
+    margin: 0;
+
+    padding: 0 48px;
+}
+
+/* Slide Wrapper */
+.menu-swiper__slide {
+    /* important for variable width menu items */
+    width: auto !important;
+}
+
+/* Navigation Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #ffffff;
+    border: 1px solid rgba(5, 5, 5, 0.05);
+    border-radius: 8px;
+    cursor: pointer;
+    color: #000000;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.arrow:hover {
+    background: #fafaf9;
+    border-color: rgba(5, 5, 5, 0.1);
+}
+
+.arrow:active {
+    transform: translateY(-50%) scale(0.96);
+}
+
+.arrow-prev {
+    left: 8px;
+}
+
+.arrow-next {
+    right: 8px;
+}
+
+/* Nav Chip Styling */
+.chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    background: white;
+    border-radius: 100px;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.chip:hover {
+    background: #f0f0ef;
+}
+
+.chip:active {
+    transform: scale(0.96);
+}
+
+/* Nav Chip Label */
+.chip-label {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.47;
+    letter-spacing: -0.006em;
+    color: #2d2c2a;
+    text-align: center;
+}
